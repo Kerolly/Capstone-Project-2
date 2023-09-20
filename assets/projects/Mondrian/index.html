@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .flex-container{
+      display: flex;
+      justify-content: center;
+    }
+
+    .grid-container {
+      background-color: #F0F1EC;
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+      grid-template-rows: 415px 9px 130px 10px 155px 9px 20px;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .black-column {
+      background-color: black;
+      grid-area: 1/2/8/2;
+    }
+
+    .first-white-row {
+      background-color: #F0F1EC;
+      grid-column: 3/8
+    }
+
+    .black-row {
+      background-color: black;
+      grid-area: 2/1/2/8;
+    }
+
+    .second-white-row-left {
+      background-color: #F0F1EC;
+      grid-area: 3/1/6/2;
+    }
+
+    .third-white-row-right {
+      background-color: #F0F1EC;
+      grid-area: 3/3/6/6;
+    }
+
+    .black-column-right {
+      background-color: black;
+      grid-row: 3/8;
+    }
+
+    .blue-box-right {
+      background-color: #004592;
+    }
+
+    .black-row-50px {
+      background-color: black;
+    }
+
+    .white-box-right {
+      background-color: #F0F1EC;
+      grid-row: 5/8;
+    }
+
+    .black-row-bottom {
+      background-color: black;
+      grid-area: 6/1/7/6;
+    }
+
+    .white-box-bottom {
+      background-color: #F0F1EC;
+    }
+
+    .yellow-box {
+      background-color: #F9D01E;
+    }
+
+    .black-column-bottom {
+      background-color: black;
+    }
+
+    .darkgrey-box {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+
+  <div class="flex-container">
+    <div class="grid-container">
+      <div class="red"></div>
+      <div class="black-column"></div>
+      <div class="first-white-row"></div>
+      <div class="black-row"></div>
+      <div class="second-white-row-left"></div>
+      <div class="third-white-row-right"></div>
+      <div class="black-column-right"></div>
+      <div class="blue-box-right"></div>
+      <div class="black-row-50px"></div>
+      <div class="white-box-right"></div>
+      <div class="black-row-bottom"></div>
+      <div class="white-box-bottom"></div>
+      <div class="yellow-box"></div>
+      <div class="black-column-bottom"></div>
+      <div class="darkgrey-box"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

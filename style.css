@@ -1,0 +1,735 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.fontP {
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fontR {
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ----------------------Header---------------------- */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+.container-navbar {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100px;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+
+}
+
+.menu>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    list-style-type: none;
+}
+
+.logo>img {
+    height: 100px;
+    width: 190px;
+}
+
+.menu>ul>li>a {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: #5B5A5B;
+    text-decoration: none;
+}
+
+.menu>ul>li>a:hover {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+    text-decoration: underline;
+}
+
+
+.menu>ul>li>a>button {
+    font-size: 16px;
+    color: white;
+    background-color: #1A1A1A;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.menu>ul>li>a>button:hover {
+    background-color: #303030;
+    color: white;
+}
+
+
+/* --------------------Hero Section------------------------------ */
+
+.hero {
+    background-color: #F3F2F2;
+    padding-left: 65px;
+    padding-right: 20px;
+    padding-top: 100px;
+}
+
+.container-hero {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+}
+
+.hero-photo>img {
+    width: 350px;
+    height: 500px;
+    margin-right: 80px;
+    padding-top: 120px;
+}
+
+.hero-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-text {
+    padding-top: 72px;
+}
+
+.hero-text>h6 {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.hero-text>h1 {
+    font-size: 55px;
+    line-height: 70px;
+    padding-top: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.hero-text>p {
+    font-size: 16px;
+    color: #5B5A5B;
+    font-weight: 700;
+    text-align: left;
+    line-height: 25px;
+    width: 72%;
+    padding-top: 30px;
+}
+
+.hero-projects-finished>img {
+    width: 15px;
+    height: 15px;
+}
+
+.hero-projects-finished {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.hero-projects-finished>p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #5B5A5B;
+}
+
+.hero-projects {
+    display: flex;
+    gap: 40px;
+}
+
+.hero-text>a {
+    font-size: 15px;
+    color: #5B5A5B;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 35px;
+    display: block;
+}
+
+.hero-text>a:hover {
+    font-size: 15px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 35px;
+    display: block;
+    transition: margin-top, 0.2s;
+}
+
+.hero-text>a:active {
+    font-size: 15px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 35px;
+    display: block;
+    translate: 0 5px;
+}
+
+/* --------------------Call to action------------------------------ */
+
+.call-to-action {
+    background: url(./assets/images/code1.png) no-repeat;
+    width: 100%;
+    height: 450px;
+    margin-top: -182px;
+}
+
+.call-to-action-text {
+    background-color: #1A1A1A;
+    width: 350px;
+    margin-right: 80px;
+    height: 182px;
+}
+
+.call-to-action-text>h1 {
+    color: #F3F2F2;
+    padding: 20px 0 0 30px;
+    text-align: left;
+}
+
+.call-to-action-text>p {
+    color: #F3F2F2;
+    padding: 10px 20px 20px 30px;
+    text-align: left;
+}
+
+/* --------------------Skills------------------------------ */
+
+.skills-text>h6 {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.skills-text>h1 {
+    font-size: 55px;
+    line-height: 50px;
+    padding-top: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.skills {
+    padding-left: 65px;
+    padding-right: 25px;
+    background-color: #F3F2F2;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.container-skills {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+}
+
+.skills-progress-bar {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.box-progress-bar>h2 {
+    font-size: 20px;
+    font-weight: 500;
+    display: inline;
+    vertical-align: middle;
+}
+
+.box-progress-bar>img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    padding-right: 7px;
+
+}
+
+.box-progress-bar {
+    margin: 15px 25px;
+}
+
+.dark-white-bg {
+    background-color: #F3F2F2;
+    height: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.html {
+    background: rgb(26, 26, 26);
+    background: linear-gradient(90deg, rgba(26, 26, 26, 1) 0%, rgba(91, 90, 91, 1) 50%, rgba(243, 242, 242, 1) 100%);
+    width: 57%;
+    height: 15px;
+}
+
+.css {
+    background: rgb(26, 26, 26);
+    background: linear-gradient(90deg, rgba(26, 26, 26, 1) 0%, rgba(91, 90, 91, 1) 50%, rgba(243, 242, 242, 1) 100%);
+    width: 42%;
+    height: 15px;
+}
+
+.js {
+    background: rgb(26, 26, 26);
+    background: linear-gradient(90deg, rgba(26, 26, 26, 1) 0%, rgba(91, 90, 91, 1) 50%, rgba(243, 242, 242, 1) 100%);
+    width: 14%;
+    height: 15px;
+}
+
+.wp {
+    background: rgb(26, 26, 26);
+    background: linear-gradient(90deg, rgba(26, 26, 26, 1) 0%, rgba(91, 90, 91, 1) 50%, rgba(243, 242, 242, 1) 100%);
+    width: 75%;
+    height: 15px;
+}
+
+/* --------------------Projects------------------------------ */
+
+.projects>h1 {
+    font-size: 55px;
+    line-height: 50px;
+    padding-top: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.projects>h6 {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.projects{
+padding: 50px 65px 50px 65px;
+}
+
+.container-projects{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 150px 150px;
+    justify-content: space-around;
+    row-gap: 75px;
+    margin-top: 100px;
+}
+
+.box-projects{
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.box-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-content>h2{
+    color: #F3F2F2;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.box-content>a>button{
+    font-size: 16px;
+    padding: 5px 25px;
+    font-weight: 600;
+    color: #1A1A1A;
+    background-color: #F3F2F2;
+    border: none;
+    cursor: pointer;
+}
+
+/* --------------------Footer------------------------------ */
+
+.footer{
+    background-color: #F3F2F2;
+    padding: 50px 65px;
+}
+
+.location>.social-media>img{
+    width: 25px;
+    height: 25px;
+}
+
+.container-footer{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: auto;
+    justify-content: space-around;
+
+}
+
+.footer-title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #1A1A1A;
+ 
+}
+
+.footer-text, .footer-text>a{
+    font-size: 12px;
+    font-weight: 600;
+    color: #5B5A5B;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+.location>h2{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.container-footer>.text>p{
+    font-size: 14px;
+    line-height: 22px;
+
+}
+
+/* --------------------Copyright------------------------------ */
+
+.copyright{
+    height: 25px;
+    background-color: #5B5A5B;
+}
+
+.copyright>h6{
+    font-size: 11px;
+    font-weight: 500;
+    color: #F3F2F2;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* --------------------Media Queries------------------------------ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* ----------------------Header---------------------- */
+    .container-navbar {
+        /* background-color: green; */
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu>ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        color: #F3F2F2;
+    }
+
+    .menu>ul>li>a>button {
+        width: 80vw;
+    }
+
+    .menu {
+        padding-top: 30px;
+        z-index: 10;
+        background-color: #1A1A1A;
+        display: none;
+    }
+
+    /* --------------------Hero Section------------------------------ */
+
+    .hero {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .container-hero {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+    }
+
+    .hero-text>h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hero-text>p {
+        width: 100%;
+    }
+
+    .hero-photo {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-photo>img {
+        margin: 0;
+        padding: 0;
+        padding-top: 40px;
+        width: 100%;
+        max-width: 320px;
+        height: 450px;
+    }
+
+    .hero-text {
+        padding-top: 60px;
+    }
+
+    /* --------------------Call to action------------------------------ */
+
+    .call-to-action-text {
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 320px;
+    }
+
+    .call-to-action {
+        height: 500px;
+    }
+
+    /* --------------------Skills------------------------------ */
+
+    .container-skills {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .skills-progress-bar {
+        margin-top: 50px;
+    }
+
+    .skills {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .skills-text>h1,
+    .skills-text>h6 {
+        text-align: center;
+    }
+
+        /* --------------------Projects------------------------------ */
+
+        .container-projects{
+            display: grid;
+            grid-template-columns: 250px;
+            grid-template-rows: repeat(6, 150px);
+            justify-content: space-around;
+        }
+
+                   /* --------------------Footer------------------------------ */
+
+     .container-footer{
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: space-around;
+    
+    }
+
+    .text{
+        padding-top: 30px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    /* ----------------------Header---------------------- */
+    .menu>ul>li>a>button {
+        display: none;
+    }
+
+    .menu>ul {
+        justify-content: center;
+        gap: 30px
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo>img {
+        width: 150px;
+        height: 80px;
+    }
+
+    .menu>ul>li>a{
+        font-size:17px
+    }
+
+    /* --------------------Hero Section------------------------------ */
+
+    .container-hero {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr
+    }
+
+    .hero-photo>img {
+        display: none;
+    }
+
+    /* --------------------Call to action------------------------------ */
+
+
+    .hero-photo {
+        align-items: flex-start;
+        margin-top: 80px;
+    }
+
+    .call-to-action-text {
+        background-color: #1a1a1aab;
+        width: 95%;
+    }
+
+        /* --------------------Projects------------------------------ */
+
+        .container-projects{
+            display: grid;
+            grid-template-columns: repeat(2, 250px);
+            grid-template-rows: 150px 150px 150px;
+            justify-content: space-around;
+        }
+
+             /* --------------------Footer------------------------------ */
+
+     .container-footer{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-around;
+    
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-column: span 2;
+        padding-top: 40px;
+    }
+
+    .text>h1{
+        font-size: 35px;
+    }
+
+    .text>p{
+        width: 50%;
+        text-align: center;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* ----------------------Header---------------------- */
+    .container-navbar {
+        margin: 0;
+        padding-right: 10px;
+        grid-template-columns: 30% 70%;
+
+    }
+
+    .menu>ul>li>a>button {
+        font-size: 14px;
+        color: white;
+        background-color: #1A1A1A;
+        padding: 5px 20px 5px 20px;
+        cursor: pointer;
+    }
+
+    .menu>ul {
+        gap: 25px;
+    }
+
+    /* --------------------Hero Section------------------------------ */
+
+    .hero-text>h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .hero-text>p {
+        font-size: 15px;
+    }
+
+    .hero-photo>img {
+        width: 280px;
+        height: 430px;
+        padding-right: 0px;
+        padding-left: 60px;
+    }
+
+    /* 
+    .hero-text>a {
+        margin-bottom: 25px;
+    } */
+
+    /* --------------------Call to action------------------------------ */
+
+    .call-to-action-text {
+        margin: 0;
+        width: 280px;
+        margin-right: 20px;
+    }
+
+    .call-to-action-text {
+        height: 210px;
+    }
+
+    .call-to-action {
+        margin-top: -210px;
+    }
+
+    /* --------------------Projects------------------------------ */
+
+    .container-projects{
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: 150px 150px 150px;
+        justify-content: space-around;
+    }
+
+}
